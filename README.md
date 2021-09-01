@@ -1,4 +1,4 @@
-# Disney Plus Clone Readme
+# Netflix Clone Readme
 
 ## <a href="https://netflix-clone-hamza.firebaseapp.com" target="_blank">LIVE DEMO</a>
 
