@@ -3,7 +3,7 @@
 ## <a href="https://netflix-clone-hamza.firebaseapp.com" target="_blank">LIVE DEMO</a>
 
 ## Description
-This is the ReactJS Disney Plus Clone, the perfect project to put on your portfolio by Clever Programmer.
+This is the ReactJS netflix Clone.
 
 ## Build it today!
 
