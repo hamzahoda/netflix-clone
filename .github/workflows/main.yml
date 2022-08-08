@@ -35,6 +35,6 @@ jobs:
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
-          server: development.ypayfinancial.com
+          server: ftp.ypayfinancial.com
           username: syedhamzahoda@development.ypayfinancial.com
           password: ${{ secrets.ftp_password }}
