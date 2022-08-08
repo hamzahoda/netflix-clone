@@ -1,12 +1,12 @@
 name: Build and deploy
 on:
   push:
-    branches:[main]
+    branches: [main]
   workflow_dispatch:
-  
+
 jobs:
   build:
-    name: Build 
+    name: Build ⛏
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,7 +20,6 @@ jobs:
         with:
           name: build
           path: build
-          
   deploy:
     name: Deploy 🚀
     needs: build
@@ -31,13 +30,11 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@main
         with: 
-          name: build
-          path: build
+          name: dist
+          path: dist
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
           server: development.ypayfinancial.com
           username: syedhamzahoda@development.ypayfinancial.com
           password: ${{ secrets.ftp_password }}
-    
-  
